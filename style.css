@@ -1,0 +1,183 @@
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: wheat;
+    /* border: 2px solid red; */
+}
+.nav-a{
+    display: block;
+    /* border: 1px solid red; */
+    /* height: 10px; */
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 16px ; 
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
+}
+.right{
+    float: left;
+    position: relative;
+    left: 500px;
+}
+#left{
+    position: relative;
+    right: 300px;
+}
+#center{
+    position: relative;
+    right: 15px;
+}
+
+#header-img{
+    width: 28px;
+    height: 28px;
+}
+.rightmost{
+    float: right;
+    border-radius: 45%;
+}
+.round-img{
+    border: 1px solid grey;
+    border-radius: 45%;
+}
+/* -----grid starts---- */
+.parent-grid{
+    display: grid;
+    grid-template-columns: 280px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 15px;
+    grid-template-areas: 'sidebar item1 item1 item2 item2 item3 item3'
+                        'sidebar item4 item4 item5 item5 item6 item6'
+                        'sidebar item7 item7 item8 item8 item9 item9'
+                        'sidebar body body body body body body';
+    margin:20px;
+}
+body{
+    grid-area:body;
+    border-radius: 5px;
+}
+.body-item1{
+    grid-area: item1;
+    border-radius: 5px;
+}
+.body-item2{
+    grid-area: item2;
+    border-radius: 5px;
+}
+.body-item3{
+    grid-area: item3;
+    border-radius: 5px;
+}
+.body-item4{
+    grid-area: item4;
+    border-radius: 5px;
+}
+.body-item5{
+    grid-area: item5;
+    border-radius: 5px;
+}
+.body-item6{
+    grid-area: item6;
+    border-radius: 5px;
+}
+.body-item7{
+    grid-area: item7;
+    border-radius: 5px;
+}
+.body-item8{
+    grid-area: item8;
+    border-radius: 5px;
+}
+.body-item9{
+    grid-area: item9;
+    border-radius: 5px;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.grid-children{
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+
+
+.body-item-img{
+    height: 30px;
+    width: 30px;
+}
+.div-header{
+    font-size: 25px;
+    font-weight: 600px;
+}
+.div-para{
+    color:grey;
+}
+.subgrid1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20px;
+    margin: 25px;
+    gap: 5px;
+}
+.subgrid1-children{
+    /* border: 1px solid red; */
+     color:blue; 
+    background-color: lightblue;
+    border-radius: 5px;
+}
+.subgrid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px;
+    margin: 5px;
+    gap: 7px;
+}
+.subgrid2-children{
+    /* border: 1px solid red; */
+    /* color:blue; */
+   
+    border-radius: 10px;
+    /* text-align: center; */
+}
+.subgrid2-child1{
+    background-color: blue;
+}
+.subgrid2-child2{
+    background-color: lightcyan
+}
+.subgrid2-a{
+    /* border: 1px solid yellow; */
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    left: 15px;
+    top:5px;
+    text-decoration: none;
+    
+}
+#subgrid2-a1{
+    color:white;
+    background-color: blue;
+}
+#subgrid2-a2{
+    color: grey;
+    background-color: lightcyan
+}
+.textbar-div{
+    background-color: lightblue;
+    height: 150px;
+}
+#textbar-children{
+    margin: 10px;
+}
+
+.side-headers{
+    font-size: 20px;
+    font-weight: 700px;
+}
